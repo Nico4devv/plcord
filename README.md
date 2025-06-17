@@ -26,13 +26,13 @@ You can also install the latest Dev version. Note the Dev version maybe have bug
 and requires [git](https://git-scm.com/downloads) to be installed.
 
 ```sh
-pip install git+https://github.com/Cryxyemi/plcord.git
+pip install git+https://github.com/Nico4devv/plcord.git
 ```
 
 ## Useful Links
 
 - [Pycord Docs](https://docs.pycord.dev/)
-- [Changelog](https://github.com/Cryxyemi/plcord/blob/main/Changelog.md)
+- [Changelog](https://github.com/Nico4devv/plcord/blob/main/Changelog.md)
 
 ## Example
 
@@ -63,4 +63,4 @@ I am always happy to receive contributions. Here is how to do it:
 2. Make changes
 3. Create a pull request
 
-You can also [create an issue](https://github.com/Cryxyemi/plcord/issues/new) if you find any bugs.
+You can also [create an issue](https://github.com/Nico4devv/plcord/issues/new) if you find any bugs.

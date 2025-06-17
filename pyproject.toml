@@ -6,7 +6,7 @@ requires-python = ">=3.8"
 license = {text = "MIT"}
 keywords = ["discord", "pycord", "py-cord"]
 authors = [
-    { name = "Cryxyemi" }
+    { name = "Nico" }
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -28,7 +28,7 @@ dependencies = {file = "requirements.txt"}
 version = {attr = "plcord.__version__"}
 
 [project.urls]
-"GitHub" = "https://github.com/Cryxyemi/plcord"
+"GitHub" = "https://github.com/Nico4devv/plcord"
 
 [build-system]
 requires = ["setuptools>=43.0.0", "wheel"]
