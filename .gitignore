@@ -1,0 +1,16 @@
+testing/
+__pycache__/
+.idea/
+venv
+.env
+*.db
+*.log
+*.ini
+.vscode/
+tests/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+*.egg
