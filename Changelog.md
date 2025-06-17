@@ -1,10 +1,10 @@
 # Changelog
 
-## Version 2.1.5
+## Version 1.05
 
 * Added `get` method to the bot class to get a item from the `plcord.json`
 
-## Version 2.0.0
+## Version 1.0.0
 
 * Removed FastSelect.
 * Made a custom cog loader, now the object of a cog is now `plcord.Bot` instead of `discord.Bot`.
@@ -13,5 +13,5 @@
 * Added docstrings to all methods in the bot class.
 * Added a custom error.
 * Added `try-except` to the version checker.
-* Added a full bot example for `plcord 2.0.0`.
+* Added a full bot example for `plcord 1.0.0`.
 * Added the `Log` class to the `__init__` so you can use the logger too.
