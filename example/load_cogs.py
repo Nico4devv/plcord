@@ -1,7 +1,7 @@
-import plcord as pl
+import picord as pi
 
 
-bot = pl.Bot()
+bot = pi.Bot()
 
 if __name__ == "__main__":
     bot.load_cogs("cogs")  # Load all cogs in the "cogs" folder

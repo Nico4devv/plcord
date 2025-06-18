@@ -2,15 +2,15 @@ import json
 from typing import Union
 
 
-class JsonParser:
+class Jsonparser:
     """
-    A simple JSON parser class.
+    A simpie JSON parser class.
 
-    Private methods
+    private methods
     ---------------
         `__read__`` -> Reads the file and returns a dict.
 
-    Public methods
+    public methods
     --------------
     ``write`` -> Writes data to the file.
         

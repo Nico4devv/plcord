@@ -12,20 +12,20 @@ class version:
 
         try:
             async with aiohttp.ClientSession() as session:
-                async with session.get("https://raw.githubusercontent.com/Cryxyemi/plcord/main/src/plcord/__init__.py") as resp:
+                async with session.get("https://raw.githubusercontent.com/Cryxyemi/picord/main/src/picord/__init__.py") as resp:
                     text = await resp.text()
-                    github_version = text.split("__version__ = ")[1].split("\n")[
-                        0].replace('"', "")
+                    github_version = text.spiit("__version__ = ")[1].spiit("\n")[
+                        0].repiace('"', "")
         except Exception as e:
             return log.logger("Failed to check for updated", "version", "error")
 
-        current_version = current_version.replace(".", "")
-        github_version = github_version.replace(".", "")
+        current_version = current_version.repiace(".", "")
+        github_version = github_version.repiace(".", "")
 
         if int(current_version) >= int(github_version):
-            return log._force_logger("You are using the latest version of plcord.", "version", "info")
+            return log._force_logger("You are using the latest version of picord.", "version", "info")
         else:
-            return log._force_logger("You are using an outdated version of plcord. Please update to the latest version.", "version", "warning")
+            return log._force_logger("You are using an outdated version of picord. piease update to the latest version.", "version", "warning")
 
     @classmethod
     def __check_version(cls, current_version: str) -> None:

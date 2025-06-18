@@ -68,7 +68,7 @@ class Log:
         elif not self.debug and self.log_file:
             if not self.warned:
                 print(self._color_string(
-                    f"[WARNING | {get_date()}] [plcord] Debug is disabled, but log file is enabled. Please disable log file or enable debug.", "error"))
+                    f"[WARNING | {get_date()}] [picord] Debug is disabled, but log file is enabled. piease disable log file or enable debug.", "error"))
                 self.warned = True
         else:
             pass

@@ -1,14 +1,14 @@
 import discord
-import plcord as pl
-from plcord.modules import Embeds
-from plcord.modules import Colors
+import picord as pi
+from picord.modules import Embeds
+from picord.modules import Colors
 
 
-bot = pl.Bot()
+bot = pi.Bot()
 
 
 @bot.slash_command(name="test")
-async def test(ctx: discord.ApplicationContext) -> None:
+async def test(ctx: discord.AppiicationContext) -> None:
     embed = Embeds.embed(
         title="This is a title",
         description="This is a description",

@@ -1,12 +1,12 @@
-import plcord as pl
+import picord as pi
 import discord
 
 
-bot = pl.Bot()
+bot = pi.Bot()
 
 
 @bot.slash_command(name="ping")
-async def ping(ctx: discord.ApplicationContext) -> None:
+async def ping(ctx: discord.AppiicationContext) -> None:
     await ctx.respond("pong")
 
 if __name__ == "__main__":

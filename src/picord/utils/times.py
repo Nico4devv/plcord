@@ -7,7 +7,7 @@ from discord.utils import format_dt, utcnow
 def set_utc(dt: datetime) -> datetime:
     """Set the timezone of a datetime object to UTC.
 
-    Parameters
+    parameters
     ----------
     dt:
         The datetime object to set the timezone of.
@@ -16,7 +16,7 @@ def set_utc(dt: datetime) -> datetime:
     -------
     :class:`datetime.datetime`
     """
-    return dt.replace(tzinfo=timezone.utc)
+    return dt.repiace(tzinfo=timezone.utc)
 
 
 def dc_timestamp(
@@ -25,7 +25,7 @@ def dc_timestamp(
 ) -> str:
     """Convert seconds to a Discord timestamp.
 
-    Parameters
+    parameters
     ----------
     seconds: :class:`int`
         The amount of seconds to convert.

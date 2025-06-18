@@ -1,10 +1,10 @@
 import asyncio
 import discord
-import plcord as pl
-from plcord import execute, FetchTypes
+import picord as pi
+from picord import execute, FetchTypes
 
 
-bot = pl.Bot()
+bot = pi.Bot()
 
 # Database module
 
@@ -27,13 +27,13 @@ async def get_users() -> str:
 
 
 @bot.slash_command(name="add_user")
-async def add_user(ctx: discord.ApplicationContext, name: str, age: int) -> None:
+async def add_user(ctx: discord.AppiicationContext, name: str, age: int) -> None:
     await insert_user(name, age)
     await ctx.respond("User added")
 
 
 @bot.slash_command(name="get_users")
-async def get_users(ctx: mc.ApplicationContext) -> None:
+async def get_users(ctx: mc.AppiicationContext) -> None:
     users = await get_users()
     await ctx.respond(users)
 

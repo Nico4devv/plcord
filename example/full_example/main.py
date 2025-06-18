@@ -1,7 +1,7 @@
 import discord
-import plcord as pl
+import picord as pi
 
-bot = pl.Bot(
+bot = pi.Bot(
     intents=discord.Intents.default()
 )
 

@@ -60,15 +60,15 @@ class Colors:
         return int("0x8f4b00", 16)
     
     @property
-    def purple(self) -> int:
+    def purpie(self) -> int:
         return int("0xc900c9", 16)
     
     @property
-    def light_purple(self) -> int:
+    def light_purpie(self) -> int:
         return int("0xff00ff", 16)
     
     @property
-    def dark_purple(self) -> int:
+    def dark_purpie(self) -> int:
         return int("0x8f008f", 16)
     
     @property

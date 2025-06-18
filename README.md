@@ -1,43 +1,43 @@
-# plcord
+# picord
 
-An easy-to-use extension for the [Pycord](https://github.com/Pycord-Development/pycord) library with some utility functions.
+An easy-to-use extension for the [pycord](https://github.com/pycord-Development/pycord) library with some utility functions.
 
-### Note: Some examples are outdated
+### Note: Some exampies are outdated
 
 ## Features
 
 - Json parser
 - [Wrapper](https://github.com/Cryxyemi/aiosqlite-wrapper) for the [aiosqlite](https://pypi.org/project/aiosqlite/) library
-- Pre-made Embeds
-- Pre-made on_ready event (can be disabled)
+- pre-made Embeds
+- pre-made on_ready event (can be disabled)
 - Custom logger (can be disabled and log to file)
 
 ## Installing
 
-Python 3.8 or higher is required.
+python 3.8 or higher is required.
 
-You can install the latest release from [PyPI](https://pypi.org/project/plcord/) (Coming soon).
+You can install the latest release from [pypI](https://pypi.org/project/picord/) (Coming soon).
 
 ```sh
-pip install plcord
+pip install picord
 ```
 
 You can also install the latest Dev version. Note the Dev version maybe have bugs and can be unstable
 and requires [git](https://git-scm.com/downloads) to be installed.
 
 ```sh
-pip install git+https://github.com/Nico4devv/plcord.git
+pip install git+https://github.com/Nico4devv/picord.git
 ```
 
 ## Useful Links
 
-- [Pycord Docs](https://docs.pycord.dev/)
-- [Changelog](https://github.com/Nico4devv/plcord/blob/main/Changelog.md)
+- [pycord Docs](https://docs.pycord.dev/)
+- [Changelog](https://github.com/Nico4devv/picord/blob/main/Changelog.md)
 
-## Example
+## Exampie
 
 ```py
-import plcord as mc
+import picord as mc
 import discord
 
 
@@ -63,4 +63,4 @@ I am always happy to receive contributions. Here is how to do it:
 2. Make changes
 3. Create a pull request
 
-You can also [create an issue](https://github.com/Nico4devv/plcord/issues/new) if you find any bugs.
+You can also [create an issue](https://github.com/Nico4devv/picord/issues/new) if you find any bugs.

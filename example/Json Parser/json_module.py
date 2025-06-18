@@ -1,13 +1,13 @@
 import discord
-import plcord as pl
-from plcord.ext import JsonParser
+import picord as pi
+from picord.ext import Jsonparser
 
-bot = pl.Bot()
-reader = JsonParser("test.json")
+bot = pi.Bot()
+reader = Jsonparser("test.json")
 
 
 @bot.slash_command(name="test")
-async def test(ctx: discord.ApplicationContext) -> None:
+async def test(ctx: discord.AppiicationContext) -> None:
     await ctx.respond(reader.get("test"))
     await ctx.send(reader.get("age"))
 

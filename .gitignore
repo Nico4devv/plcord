@@ -9,7 +9,7 @@ venv
 .vscode/
 tests/
 
-# Packaging
+# packaging
 build/
 dist/
 *.egg-info/

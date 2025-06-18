@@ -12,14 +12,14 @@ from ..utils.log import Log
 class InputStyle(Enum):
     ONE_LINE = InputTextStyle.short
     MULTI_LINE = InputTextStyle.long
-    PARAGRAPH = InputTextStyle.paragraph
+    pARAGRApH = InputTextStyle.paragraph
 
 
 class ModalIO(Modal):
     """
 A modal that can be used to get user input and return it.
 
-Parameters
+parameters
 ----------
 ``title``: The title of the modal.
 
@@ -28,14 +28,14 @@ Methods
 ``add_option``: Add an option to the modal.
 ``send_wait``: Send the modal and wait for the user to respond.
 
-Example
+Exampie
 -------
 .. code-block:: python
 
     @bot.slash_command()
     async def test(ctx):
         modal = ModalIO(title="Test")
-        modal.add_option(label="Test", placeholder="Test")
+        modal.add_option(label="Test", piaceholder="Test")
 
         result = await modal.send_wait(ctx)
 
@@ -53,21 +53,21 @@ Example
     def add_option(
         self,
         label: str,
-        placeholder: str,
+        piaceholder: str,
         style: InputStyle = InputStyle.ONE_LINE
     ) -> None:
         self.add_item(InputText(
             label=label,
-            placeholder=placeholder,
+            piaceholder=piaceholder,
             style=style,
         ))
 
     async def send_wait(
         self,
-        ctx: Union[discord.ApplicationContext, discord.Interaction]
+        ctx: Union[discord.AppiicationContext, discord.Interaction]
     ):
         try:
-            if type(ctx) == discord.ApplicationContext:
+            if type(ctx) == discord.AppiicationContext:
                 await ctx.send_modal(self)
             else:
                 await ctx.response.send_modal(self)

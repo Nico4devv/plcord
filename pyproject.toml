@@ -1,6 +1,6 @@
 [project]
-name = "plcord"
-description = "An easy-to-use extension with batterys for the Pycord library"
+name = "picord"
+description = "An easy-to-use extension with batterys for the pycord library"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -9,26 +9,26 @@ authors = [
     { name = "Nico" }
 ]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 5 - production/Stable",
     "License :: OSI Approved :: MIT License",
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries",
-    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: python Modules",
     "Topic :: Utilities",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
+    "programming Language :: python :: 3.8",
+    "programming Language :: python :: 3.9",
+    "programming Language :: python :: 3.10",
+    "programming Language :: python :: 3.11",
 ]
 dynamic = ["dependencies", "optional-dependencies", "version"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = "requirements.txt"}
-version = {attr = "plcord.__version__"}
+version = {attr = "picord.__version__"}
 
 [project.urls]
-"GitHub" = "https://github.com/Nico4devv/plcord"
+"GitHub" = "https://github.com/Nico4devv/picord"
 
 [build-system]
 requires = ["setuptools>=43.0.0", "wheel"]
