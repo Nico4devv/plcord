@@ -9,7 +9,7 @@ import discord
 from .utils.log import Log
 from .errors import NoSetupFound
 
-_version = "1.0.5"
+_version = "1.0.6"
 
 
 class Bot(discord.Bot):

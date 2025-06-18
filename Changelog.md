@@ -1,8 +1,11 @@
 # Changelog
 
-## Version 1.05
+## Version 1.0.6
 
-* Added `get` method to the bot class to get a item from the `plcord.json`
+* Added `get()` method to the bot class to retrieve configuration items from `plcord.json`
+
+## version 1.0.6
+* Bug fix: Corrected improper replacement of `mc` with `pl` in editor
 
 ## Version 1.0.0
 
