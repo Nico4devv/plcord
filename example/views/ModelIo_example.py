@@ -1,5 +1,5 @@
-import picord as pi
-from picord.modules import ModalIO
+import dinocord as pi
+from dinocord.modules import ModalIO
 
 
 bot = pi.Bot()

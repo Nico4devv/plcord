@@ -1,4 +1,4 @@
-import picord as pi
+import dinocord as pi
 import discord
 
 

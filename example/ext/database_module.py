@@ -1,7 +1,7 @@
 import asyncio
 import discord
-import picord as pi
-from picord import execute, FetchTypes
+import dinocord as pi
+from dinocord import execute, FetchTypes
 
 
 bot = pi.Bot()

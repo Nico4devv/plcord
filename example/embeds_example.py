@@ -1,7 +1,7 @@
 import discord
-import picord as pi
-from picord.modules import Embeds
-from picord.modules import Colors
+import dinocord as pi
+from dinocord.modules import Embeds
+from dinocord.modules import Colors
 
 
 bot = pi.Bot()

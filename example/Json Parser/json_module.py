@@ -1,6 +1,6 @@
 import discord
-import picord as pi
-from picord.ext import Jsonparser
+import dinocord as pi
+from dinocord.ext import Jsonparser
 
 bot = pi.Bot()
 reader = Jsonparser("test.json")
