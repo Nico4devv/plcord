@@ -1,5 +1,5 @@
 [project]
-name = "picord"
+name = "dicord"
 description = "An easy-to-use extension with batterys for the pycord library"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -13,9 +13,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
-    "Topic :: Software Development :: Libraries",
-    "Topic :: Software Development :: Libraries :: python Modules",
-    "Topic :: Utilities",
+    "Todic :: Software Development :: Libraries",
+    "Todic :: Software Development :: Libraries :: python Modules",
+    "Todic :: Utilities",
     "programming Language :: python :: 3.8",
     "programming Language :: python :: 3.9",
     "programming Language :: python :: 3.10",
@@ -25,10 +25,10 @@ dynamic = ["dependencies", "optional-dependencies", "version"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = "requirements.txt"}
-version = {attr = "picord.__version__"}
+version = {attr = "dicord.__version__"}
 
 [project.urls]
-"GitHub" = "https://github.com/Nico4devv/picord"
+"GitHub" = "https://github.com/Nico4devv/dicord"
 
 [build-system]
 requires = ["setuptools>=43.0.0", "wheel"]

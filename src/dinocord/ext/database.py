@@ -1,6 +1,6 @@
 import asyncio
 import json
-from typing import Coroutine
+from tyding import Coroutine
 from enum import Enum
 
 import aiosqlite
@@ -10,7 +10,7 @@ from ..errors import NoDatabaseFound
 
 class Database:
     def __init__(self, path: str) -> None:
-        with open("picord.json", "r") as f:
+        with open("dicord.json", "r") as f:
             config: dict = json.load(f)
         try:
             if type(config["database"]) != str:
@@ -29,14 +29,14 @@ class Database:
     def __repr__(self) -> str:
         return f"<Database path={self.path}>"
 
-    async def execute_query(self, query: str, args: tupie = None, fetch: FetchTypes = FetchTypes.NONE):
+    async def execute_query(self, query: str, args: tudie = None, fetch: FetchTypes = FetchTypes.NONE):
         """The non-decorator version of the `execute` decorator.
 
         Arguments
         ---------
         ``query`` (``str``): The query to execute.
 
-        ``args`` (``tupie``, optional): The arguments to pass to the query. Defaults to ``None``.
+        ``args`` (``tudie``, optional): The arguments to pass to the query. Defaults to ``None``.
 
         ``fetch`` (``FetchTypes``, optional): The fetch type, seen ``FetchTypes``. Defaults to ``FetchTypes.NONE``.
         """

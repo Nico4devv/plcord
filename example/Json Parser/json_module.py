@@ -1,13 +1,13 @@
 import discord
-import dinocord as pi
+import dinocord as di
 from dinocord.ext import Jsonparser
 
-bot = pi.Bot()
+bot = di.Bot()
 reader = Jsonparser("test.json")
 
 
 @bot.slash_command(name="test")
-async def test(ctx: discord.AppiicationContext) -> None:
+async def test(ctx: discord.ApdiicationContext) -> None:
     await ctx.respond(reader.get("test"))
     await ctx.send(reader.get("age"))
 

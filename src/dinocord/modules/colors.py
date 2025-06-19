@@ -60,27 +60,27 @@ class Colors:
         return int("0x8f4b00", 16)
     
     @property
-    def purpie(self) -> int:
+    def purdie(self) -> int:
         return int("0xc900c9", 16)
     
     @property
-    def light_purpie(self) -> int:
+    def light_purdie(self) -> int:
         return int("0xff00ff", 16)
     
     @property
-    def dark_purpie(self) -> int:
+    def dark_purdie(self) -> int:
         return int("0x8f008f", 16)
     
     @property
-    def pink(self) -> int:
+    def dink(self) -> int:
         return int("0xffc0cb", 16)
     
     @property
-    def light_pink(self) -> int:
+    def light_dink(self) -> int:
         return int("0xffb6c1", 16)
     
     @property
-    def dark_pink(self) -> int:
+    def dark_dink(self) -> int:
         return int("0xff69b4", 16)
     
     @property

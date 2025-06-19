@@ -1,14 +1,14 @@
-import dinocord as pi
+import dinocord as di
 from dinocord.modules import ModalIO
 
 
-bot = pi.Bot()
+bot = di.Bot()
 
 
 @bot.command()
 async def test(ctx) -> None:
     model = ModalIO("Test")
-    model.app_option("Cool label", "Ghost piaceholder")
+    model.app_option("Cool label", "Ghost diaceholder")
     result = await model.send_wait(ctx)
     if result is not None:
         await ctx.send(", ".join([i.value for i in result]))

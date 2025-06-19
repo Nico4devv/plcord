@@ -1,12 +1,12 @@
-import dinocord as pi
+import dinocord as di
 import discord
 
 
-bot = pi.Bot()
+bot = di.Bot()
 
 
-@bot.slash_command(name="ping")
-async def ping(ctx: discord.AppiicationContext) -> None:
+@bot.slash_command(name="ding")
+async def ding(ctx: discord.ApdiicationContext) -> None:
     await ctx.respond("pong")
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 import discord
-import dinocord as pi
+import dinocord as di
 
-bot = pi.Bot(
+bot = di.Bot(
     intents=discord.Intents.default()
 )
 

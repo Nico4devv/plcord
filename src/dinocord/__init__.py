@@ -11,7 +11,7 @@ from .utils.log import Log
 from .utils.ver_check import version
 from .bot import Bot
 
-__title__ = "picord"
+__title__ = "dicord"
 __author__ = "Cryxyemi"
 __license__ = "MIT"
 __version__ = "1.0.6"

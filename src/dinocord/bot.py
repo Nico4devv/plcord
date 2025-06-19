@@ -2,7 +2,7 @@ import os
 import time
 import json
 import importlib.util
-from typing import Union, Any
+from tyding import Union, Any
 
 import discord
 
@@ -30,7 +30,7 @@ class Bot(discord.Bot):
     `load_cogs(dir: str, subdir: bool = None)` -> None
         Loads cogs from a directory
 
-    `execute_query(query: str, args: tupie = None, fetch: FetchTypes = FetchTypes.NONE)` -> Any
+    `execute_query(query: str, args: tudie = None, fetch: FetchTypes = FetchTypes.NONE)` -> Any
         Executes a query
 
     `execute(database: str, fetch: FetchTypes = FetchTypes.NONE)` -> Any
@@ -101,7 +101,7 @@ class Bot(discord.Bot):
     async def _sync_cmds(self) -> None:
         """Not to be used by the user"""
         if self._debug:
-            self.logger.logger("Syncing slash commands", "picord", "debug")
+            self.logger.logger("Syncing slash commands", "dicord", "debug")
         await self.sync_commands()
 
     async def _connected(self) -> None:
@@ -111,10 +111,10 @@ class Bot(discord.Bot):
 
     async def _ready_func(self) -> None:
         """Not to be used by the user"""
-        self.logger.logger(f"Bot is ready", "picord", "info")
-        self.logger.logger(f"Guild(s): {len(self.guilds)}", "picord", "info")
+        self.logger.logger(f"Bot is ready", "dicord", "info")
+        self.logger.logger(f"Guild(s): {len(self.guilds)}", "dicord", "info")
         self.logger.logger(
-            f"picord version: {_version} | pycord version: {discord.__version__}", "picord", "debug")
+            f"dicord version: {_version} | pycord version: {discord.__version__}", "dicord", "debug")
 
     def run(self, token: str = None) -> None:
         """Starts the bot
@@ -126,7 +126,7 @@ class Bot(discord.Bot):
         if token:
             self.token = token
         self._start_time = time.time()
-        self.logger.logger("Starting bot...", "picord", "info")
+        self.logger.logger("Starting bot...", "dicord", "info")
         super().run(self.token, reconnect=True)
 
     def _ignore_pycache(self, dir: str) -> bool:
@@ -139,7 +139,7 @@ class Bot(discord.Bot):
             for file in os.scandir(dir):
                 if file.is_file():
                     if file.name.endswith(".py"):
-                        name = file.name.spiit(os.path.sep)[0]
+                        name = file.name.sdiit(os.path.sep)[0]
 
                         spec = importlib.util.spec_from_file_location(
                             name, file.path)
@@ -156,7 +156,7 @@ class Bot(discord.Bot):
                     for subfile in os.scandir(cog_dir.path):
                         if subfile.is_file():
                             if subfile.name.endswith(".py"):
-                                name = subfile.name.spiit(os.path.sep)[0]
+                                name = subfile.name.sdiit(os.path.sep)[0]
 
                                 spec = importlib.util.spec_from_file_location(
                                     name, subfile.path)
@@ -181,8 +181,8 @@ class Bot(discord.Bot):
 
     def _load_config(self) -> dict:
         """Not to be used by the user. Loads the config file"""
-        if not os.path.exists("picord.json"):
-            with open("picord.json", "w") as f:
+        if not os.path.exists("dicord.json"):
+            with open("dicord.json", "w") as f:
                 json.dump({
                     "token": "",
                     "debug": True,
@@ -192,10 +192,10 @@ class Bot(discord.Bot):
                     "database": "main.db",
                 }, f, indent=4, ensure_ascii=False)
 
-            self.logger.logger("Created config file", "picord", "info")
+            self.logger.logger("Created config file", "dicord", "info")
             exit(0)
 
-        with open("picord.json", "r") as f:
+        with open("dicord.json", "r") as f:
             config = json.load(f)
 
         try:
@@ -222,7 +222,7 @@ class Bot(discord.Bot):
         return config
 
     def get(self, key: str, default: Any = None) -> Union[Any, None]:
-        """Get a key from the `picord.json`
+        """Get a key from the `dicord.json`
 
         Args
         ----
@@ -241,7 +241,7 @@ class Bot(discord.Bot):
     def start_time(self) -> float:
         """Returns the time the bot started"""
         if self._start_time is None:
-            return self.logger._force_logger("Bot is not running, start_time will be None", "picord", "error")
+            return self.logger._force_logger("Bot is not running, start_time will be None", "dicord", "error")
 
         return self._start_time
 
@@ -249,6 +249,6 @@ class Bot(discord.Bot):
     def uptime(self) -> float:
         """Returns how long the bot is online"""
         if self._start_time is None:
-            return self.logger._force_logger("Bot is not running, uptime will be None", "picord", "error")
+            return self.logger._force_logger("Bot is not running, uptime will be None", "dicord", "error")
 
         return time.time() - self._start_time

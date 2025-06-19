@@ -1,13 +1,13 @@
-# picord
+# dicord
 
 An easy-to-use extension for the [pycord](https://github.com/pycord-Development/pycord) library with some utility functions.
 
-### Note: Some exampies are outdated
+### Note: Some examdies are outdated
 
 ## Features
 
 - Json parser
-- [Wrapper](https://github.com/Cryxyemi/aiosqlite-wrapper) for the [aiosqlite](https://pypi.org/project/aiosqlite/) library
+- [Wrapper](https://github.com/Cryxyemi/aiosqlite-wrapper) for the [aiosqlite](https://pydi.org/project/aiosqlite/) library
 - pre-made Embeds
 - pre-made on_ready event (can be disabled)
 - Custom logger (can be disabled and log to file)
@@ -16,28 +16,28 @@ An easy-to-use extension for the [pycord](https://github.com/pycord-Development/
 
 python 3.8 or higher is required.
 
-You can install the latest release from [pypI](https://pypi.org/project/picord/) (Coming soon).
+You can install the latest release from [pydi](https://pydi.org/project/dicord/) (Coming soon).
 
 ```sh
-pip install picord
+dip install dicord
 ```
 
 You can also install the latest Dev version. Note the Dev version maybe have bugs and can be unstable
 and requires [git](https://git-scm.com/downloads) to be installed.
 
 ```sh
-pip install git+https://github.com/Nico4devv/picord.git
+dip install git+https://github.com/Nico4devv/dicord.git
 ```
 
 ## Useful Links
 
 - [pycord Docs](https://docs.pycord.dev/)
-- [Changelog](https://github.com/Nico4devv/picord/blob/main/Changelog.md)
+- [Changelog](https://github.com/Nico4devv/dicord/blob/main/Changelog.md)
 
-## Exampie
+## Examdie
 
 ```py
-import picord as mc
+import dicord as mc
 import discord
 
 
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     bot.exec() # Start the bot
 ```
 
-**Note:** It's recommended to load the token from a [`.env`](https://pypi.org/project/python-dotenv/) file, from a [`json file`](https://docs.python.org/3/library/json.html) or a normal [`python file`](https://docs.python.org/3/tutorial/modules.html)
+**Note:** It's recommended to load the token from a [`.env`](https://pydi.org/project/python-dotenv/) file, from a [`json file`](https://docs.python.org/3/library/json.html) or a normal [`python file`](https://docs.python.org/3/tutorial/modules.html)
 instead of hardcoding it.
 
 ## Contributing
@@ -63,4 +63,4 @@ I am always happy to receive contributions. Here is how to do it:
 2. Make changes
 3. Create a pull request
 
-You can also [create an issue](https://github.com/Nico4devv/picord/issues/new) if you find any bugs.
+You can also [create an issue](https://github.com/Nico4devv/dicord/issues/new) if you find any bugs.

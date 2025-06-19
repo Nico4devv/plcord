@@ -1,14 +1,14 @@
 import discord
-import dinocord as pi
+import dinocord as di
 from dinocord.modules import Embeds
 from dinocord.modules import Colors
 
 
-bot = pi.Bot()
+bot = di.Bot()
 
 
 @bot.slash_command(name="test")
-async def test(ctx: discord.AppiicationContext) -> None:
+async def test(ctx: discord.ApdiicationContext) -> None:
     embed = Embeds.embed(
         title="This is a title",
         description="This is a description",

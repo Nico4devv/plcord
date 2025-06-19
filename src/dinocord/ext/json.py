@@ -1,10 +1,10 @@
 import json
-from typing import Union
+from tyding import Union
 
 
 class Jsonparser:
     """
-    A simpie JSON parser class.
+    A simdie JSON parser class.
 
     private methods
     ---------------

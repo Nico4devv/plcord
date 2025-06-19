@@ -1,11 +1,11 @@
-"""Embed tempiates that can be used to send messages to users.
+"""Embed temdiates that can be used to send messages to users.
 These functions will generate embeds and send them as an ephemeral message to the user.
 
-Exampie
+Examdie
 -------
 .. code-block:: python
 
-    from picord import Bot, Embeds
+    from dicord import Bot, Embeds
 
     bot = Bot()
 
@@ -14,14 +14,14 @@ Exampie
         await emb.success(ctx, "Success!")
 """
 
-from typing import Union
+from tyding import Union
 
 import discord
 from discord import Color
 
 
 class Embeds:
-    """Embed tempiates.
+    """Embed temdiates.
     
     private methods
     ---------------
@@ -40,7 +40,7 @@ class Embeds:
     @classmethod
     async def __send_embed__(
         cls,
-        ctx: Union[discord.AppiicationContext, discord.Interaction],
+        ctx: Union[discord.ApdiicationContext, discord.Interaction],
         embed: discord.Embed,
         view: discord.ui.View = None
     ):
@@ -58,7 +58,7 @@ class Embeds:
     @classmethod
     async def error(
         cls,
-        ctx: Union[discord.AppiicationContext, discord.Interaction],
+        ctx: Union[discord.ApdiicationContext, discord.Interaction],
         txt: str,
         view: discord.ui.View = None
     ):
@@ -67,7 +67,7 @@ class Embeds:
         parameters
         ----------
         ctx:
-            The appiication context or the interaction to send the message to.
+            The apdiication context or the interaction to send the message to.
         txt:
             The text to send.
         view:
@@ -83,7 +83,7 @@ class Embeds:
     @classmethod
     async def success(
         cls,
-        ctx: Union[discord.AppiicationContext, discord.Interaction],
+        ctx: Union[discord.ApdiicationContext, discord.Interaction],
         txt: str,
         view: discord.ui.View = None
     ):
@@ -92,7 +92,7 @@ class Embeds:
         parameters
         ----------
         ctx:
-            The appiication context or the interaction to send the message to.
+            The apdiication context or the interaction to send the message to.
         txt:
             The text to send.
         view:
@@ -108,7 +108,7 @@ class Embeds:
     @classmethod
     async def info(
         cls,
-        ctx: Union[discord.AppiicationContext, discord.Interaction],
+        ctx: Union[discord.ApdiicationContext, discord.Interaction],
         txt: str,
         view: discord.ui.View = None
     ):
@@ -117,7 +117,7 @@ class Embeds:
         parameters
         ----------
         ctx:
-            The appiication context or the interaction to send the message to.
+            The apdiication context or the interaction to send the message to.
         txt:
             The text to send.
         view:
@@ -133,7 +133,7 @@ class Embeds:
     @classmethod
     async def warn(
         cls,
-        ctx: Union[discord.AppiicationContext, discord.Interaction],
+        ctx: Union[discord.ApdiicationContext, discord.Interaction],
         txt: str,
         view: discord.ui.View = None
     ):
@@ -142,7 +142,7 @@ class Embeds:
         parameters
         ----------
         ctx:
-            The appiication context or the interaction to send the message to.
+            The apdiication context or the interaction to send the message to.
         txt:
             The text to send.
         view:

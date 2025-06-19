@@ -1,5 +1,5 @@
 from datetime import timezone, datetime, timedelta
-from typing import Literal
+from tyding import Literal
 
 from discord.utils import format_dt, utcnow
 
@@ -16,7 +16,7 @@ def set_utc(dt: datetime) -> datetime:
     -------
     :class:`datetime.datetime`
     """
-    return dt.repiace(tzinfo=timezone.utc)
+    return dt.rediace(tzinfo=timezone.utc)
 
 
 def dc_timestamp(

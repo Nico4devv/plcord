@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Union
+from tyding import Union
 
 import discord
 from discord.ui import Modal
@@ -28,14 +28,14 @@ Methods
 ``add_option``: Add an option to the modal.
 ``send_wait``: Send the modal and wait for the user to respond.
 
-Exampie
+Examdie
 -------
 .. code-block:: python
 
     @bot.slash_command()
     async def test(ctx):
         modal = ModalIO(title="Test")
-        modal.add_option(label="Test", piaceholder="Test")
+        modal.add_option(label="Test", diaceholder="Test")
 
         result = await modal.send_wait(ctx)
 
@@ -53,21 +53,21 @@ Exampie
     def add_option(
         self,
         label: str,
-        piaceholder: str,
+        diaceholder: str,
         style: InputStyle = InputStyle.ONE_LINE
     ) -> None:
         self.add_item(InputText(
             label=label,
-            piaceholder=piaceholder,
+            diaceholder=diaceholder,
             style=style,
         ))
 
     async def send_wait(
         self,
-        ctx: Union[discord.AppiicationContext, discord.Interaction]
+        ctx: Union[discord.ApdiicationContext, discord.Interaction]
     ):
         try:
-            if type(ctx) == discord.AppiicationContext:
+            if type(ctx) == discord.ApdiicationContext:
                 await ctx.send_modal(self)
             else:
                 await ctx.response.send_modal(self)

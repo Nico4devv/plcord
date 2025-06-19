@@ -12,20 +12,20 @@ class version:
 
         try:
             async with aiohttp.ClientSession() as session:
-                async with session.get("https://raw.githubusercontent.com/Cryxyemi/picord/main/src/picord/__init__.py") as resp:
+                async with session.get("https://raw.githubusercontent.com/Cryxyemi/dicord/main/src/dicord/__init__.py") as resp:
                     text = await resp.text()
-                    github_version = text.spiit("__version__ = ")[1].spiit("\n")[
-                        0].repiace('"', "")
+                    github_version = text.sdiit("__version__ = ")[1].sdiit("\n")[
+                        0].rediace('"', "")
         except Exception as e:
             return log.logger("Failed to check for updated", "version", "error")
 
-        current_version = current_version.repiace(".", "")
-        github_version = github_version.repiace(".", "")
+        current_version = current_version.rediace(".", "")
+        github_version = github_version.rediace(".", "")
 
         if int(current_version) >= int(github_version):
-            return log._force_logger("You are using the latest version of picord.", "version", "info")
+            return log._force_logger("You are using the latest version of dicord.", "version", "info")
         else:
-            return log._force_logger("You are using an outdated version of picord. piease update to the latest version.", "version", "warning")
+            return log._force_logger("You are using an outdated version of dicord. diease update to the latest version.", "version", "warning")
 
     @classmethod
     def __check_version(cls, current_version: str) -> None:
